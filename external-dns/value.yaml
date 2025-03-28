@@ -1,0 +1,12 @@
+namespaceOverride: kube-system
+sources:
+  - service
+  - ingress
+aws:
+  region: ap-northeast-2
+  policy: sync
+  txtOwnerId: eksdapne2-rqsj
+serviceAccount:
+  name: external-dns
+  annotations:
+    eks.amazonaws.com/role-arn: arn:aws:iam::816736805842:role/eks-eksdapne2-rqsj-external-dns

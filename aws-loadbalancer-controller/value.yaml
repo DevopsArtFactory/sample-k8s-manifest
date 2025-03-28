@@ -1,0 +1,6 @@
+clusterName: eksdapne2-rqsj
+serviceAccount:
+    create: true
+    name: aws-load-balancer-controller
+    annotations:
+      eks.amazonaws.com/role-arn: arn:aws:iam::816736805842:role/eks-eksdapne2-rqsj-alb-controller
